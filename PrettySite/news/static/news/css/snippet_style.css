@@ -1,0 +1,68 @@
+@import "color_scheme.css";
+
+.news-snippet {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--news-snippet-bg-color);
+    overflow: hidden;
+    box-shadow: 0px 0px 5px var(--news-snippet-bg-color);
+    margin-bottom: 20px;
+}
+
+.allert-snippet {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+
+    background: var(--allert-snippet-bg-color);
+    color: darkred;
+    font-weight: bold;
+
+    box-shadow: 0px 0px 5px var(--allert-snippet-bg-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.news-date {
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    left: 0px;
+}
+
+.creating-snippet-content {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 0px var(--creating-snippet-bg-color);
+    transition: box-shadow .2s ease-out;
+    background: var(--creating-snippet-bg-color);
+    border: 0px;
+}
+
+.creating-snippet-content:hover {
+    box-shadow: 0px 0px 5px var(--creating-snippet-bg-color);
+    transition: box-shadow .2s ease-out;
+}
+
+.creating-snippet-content:hover .creating-snippet-icon {
+    transform: rotate(0deg);
+    transition: transform .2s;
+}
+
+.creating-snippet-text {
+    margin-left: 20px;
+    color: white;
+    text-align: left;
+}
+
+
+.creating-snippet-icon {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-45deg);
+    transition: transform .2s ease-out;
+}

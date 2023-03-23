@@ -1,0 +1,77 @@
+@import "color_scheme.css";
+
+.form-container {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form_input {
+    display: block;
+    height: 50px;
+    font-size: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+    color: var(--left-menu-hovered-text-color);
+    width: 100%;
+}
+
+.form_input:focus-visible {
+    outline: 0px;
+}
+
+.form-name-input {
+    height: 100px;
+    font-size: 80px;
+}
+
+.form-anons-input {
+    height: 80px;
+    font-size: 60px;
+}
+
+.form-text-input {
+    height: 200px;
+}
+
+.button-complete {
+    background: var(--left-menu-hovered-text-color);
+    height: 100px;
+    width: 100%;
+    color: var(--left-menu-text-color);
+    font-size: 50px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.button-complete:hover {
+    background: var(--left-menu-text-color);
+    color: var(--left-menu-hovered-text-color);
+    transition: all .2s ease-in-out;
+}
+
+.form-header {
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    background: var(--left-menu-hovered-text-color);
+    border-radius: 20px;
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    min-width: 400px;
+}
+
+.form-header-text {
+    color: var(--left-menu-text-color);
+    font-weight: bold;
+    margin: 16px;
+    text-shadow: 0px 0px 3px var(--left-menu-text-color);
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+}

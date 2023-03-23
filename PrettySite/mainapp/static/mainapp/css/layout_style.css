@@ -1,7 +1,8 @@
+@import "color_scheme.css";
+
 .body_content {
-    background-color: #e1e4f5;
-    overflow: hidden;
-    font-family: 'Ubuntu Mono', monospace
+    background-color: var(--page-bg);
+    font-family: 'Kanit', sans-serif;
 }
 
 .noselect {
@@ -15,23 +16,26 @@
 
 .left-menu {
     float: left;
-    background: #e5e5e5;
+    position: sticky;
+    top: 0px;
+    background: var(--left-menu-bg-color);
     width: 350px;
     padding: 5px;
     height: 100vh;
-    color: #888;
+    color: var(--left-menu-text-color);
     overflow-y: auto;
     overflow-x: hidden;
-    filter: drop-shadow(0px 0px 3rem #c7d0cc);
+    filter: drop-shadow(0px 0px 1rem var(--left-menu-bg-color));
 }
 
 .logo {
-    padding-top: 20px;
+    margin-top: 5px;
     width: 100%;
-    margin-left: 10px;
+    padding-left: 10px;
     position: relative;
     top: -5px;
     min-width: 150px;
+    border-radius: 10px;
 }
 
 .logo-text {
@@ -40,29 +44,31 @@
     font-family: 'Kanit', cursive;
     font-weight: bold;
     padding-left: 10px;
-    color: #333333;
-    text-shadow: 1px 1px 4px #333333;
+    color: var(--left-menu-text-color);
+    text-shadow: 1px 1px 8px var(--left-menu-text-shadow-color);
 }
 
 .left-panel-pages {
+    margin-bottom: 5px;
     text-align: center;
     font-size: 50px;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
     display: block;
     height: min-content;
-    color: #5b5b5b;
-    text-shadow: 0px 0px 2px #333333;
+    color: var(--left-menu-text-color);
+    text-shadow: 0px 0px 4px var(--left-menu-text-shadow-color);
     letter-spacing: normal;
+    border-radius: 10px;
 
     transition: all .2s ease-out;
 }
 
 .left-panel-pages:hover {
-    background: #e7e7e7;
-    color: #666666;
-    letter-spacing: .2rem;
-    text-shadow: 1px 1px 4px #333333;
+    background: var(--left-menu-text-color);
+    color: var(--left-menu-hovered-text-color);
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 4px var(--left-menu-text-color);
 
     transition: all .2s ease-out;
 }
@@ -73,9 +79,18 @@
 
 .page-content {
     display: flex;
-    padding: 4rem;
-    padding-top: 20vh;
-    text-align: center;
-    font-size: 80px;
+    padding-block: 20px;
+    padding-inline: 50px;
+    font-size: 100px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selector-footer {
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    padding-inline: 5px;
+    font-size: 20px;
 }

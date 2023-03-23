@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'mainapp\layout.html' %}
+{% load static %}
+{% block pagetitle %}news on site{% endblock %}
+
+
+{% block rootcontent %}
+    <link rel="stylesheet" href="{% static 'news\css\snippet_style.css' %}" type="text/css">
+    <table>
+        {% include "news/button_create_news.html" %}
+        {% if posts %}
+            {% for post in posts %}
+                {% include "news/news_snippet.html" %}
+            {% endfor %}
+        {% else %}
+            <div class="allert-snippet">записей не найдено</div>
+        {% endif %}
+    </table>
+{% endblock %}

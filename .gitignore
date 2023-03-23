@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 /PrettySite/PrettySite/settings.py
+/PrettySite/PrettySite/conf/
+/PrettySite/PrettySite/.mysqlpass

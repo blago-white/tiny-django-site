@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% load static %}
+<button class="news-snippet creating-snippet-content" onclick="window.open('{% url 'create' %}', '_self')">
+    <img src="{% static 'news/img/add_news_icon.png' %}" class="creating-snippet-icon">
+    <div class="creating-snippet-text">
+        <h1>Create</h1>
+        <h4>Create News</h4>
+    </div>
+</button>

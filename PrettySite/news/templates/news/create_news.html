@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'mainapp\layout.html' %}
+{% load static %}
+{% block pagetitle %}create new post{% endblock %}
+
+
+{% block rootcontent %}
+    <link rel="stylesheet" href="{% static 'news\css\snippet_style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'news\css\create_news_style.css' %}" type="text/css">
+    <header class="form-header">
+        <h1 class="form-header-text">{{ creating_header }}</h1>
+    </header>
+    <form method="post" class="news-snippet form-container">
+        {% csrf_token %}
+
+        {{ form.title }}
+        {{ form.anons }}
+        {{ form.text }}
+
+        <button class="button-complete"  type="submit">to publish</button>
+    </form>
+{% endblock %}

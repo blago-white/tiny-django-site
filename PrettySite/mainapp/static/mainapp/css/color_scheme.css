@@ -1,0 +1,12 @@
+:root {
+  --left-menu-text-color: #fff0f0;
+  --left-menu-hovered-text-color: #124559;
+  --left-menu-bg-color: #2e4756;
+  --page-bg: #e1e4f5;
+  --left-menu-text-shadow-color: #5b5b5b;
+  --news-snippet-bg-color: #eff6e0;
+  --allert-snippet-bg-color: #ffbdbd;
+  --creating-snippet-bg-color: #2e4756;
+  --placeholder-color: #52656d;
+}
+
